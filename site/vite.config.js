@@ -14,7 +14,6 @@ export default defineConfig({
         contact: resolve(__dirname, "contact-us.html"),
         thankYou: resolve(__dirname, "thank-you.html"),
         recipes: resolve(__dirname, "recipes.html"),
-        shop: resolve(__dirname, "shop.html"),
       },
     },
   },
