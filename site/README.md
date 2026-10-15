@@ -12,14 +12,14 @@ site/
 │   └── footer.html       # Shared footer
 ├── scripts/html-partials.js  # Injects partials at build/dev time
 ├── index.html            # Homepage
+├── about.html            # Farm story, varieties, and market hours
 ├── recipes.html          # Recipe index (external links by variety)
-├── shop.html             # Shop (products rendered from JSON)
-├── js/shop.js            # Fetches products and builds product cards
-├── public/data/products.json  # Product catalog — add items here
 ├── contact-us.html       # Order / contact forms
 ├── thank-you.html        # Form success page
 ├── public/
 │   ├── favicon.ico
+│   ├── robots.txt
+│   ├── sitemap.xml
 │   └── assets/images/    # Lowercase, URL-safe filenames
 ├── package.json
 ├── vite.config.js
@@ -51,7 +51,7 @@ Header variants (same markup as `index.html`, different layout):
 | Variant   | Used on        | Behavior                                      |
 |-----------|----------------|-----------------------------------------------|
 | `home`    | `index.html`   | Full hero, logo, weekly email CTA             |
-| `compact` | `contact-us.html` | Shorter hero, logo links home              |
+| `compact` | `about.html`, `contact-us.html`, `recipes.html` | Shorter hero, logo links home |
 | `minimal` | `thank-you.html`  | Simple bar, logo links home, no background |
 
 Edit `partials/header.html` or `partials/footer.html` once to update every page.
@@ -66,15 +66,17 @@ npm run build    # output in dist/
 npm run preview  # preview production build
 ```
 
-## Shop & Stripe
+## Pages
 
-Products live in `public/data/products.json`. Each entry needs:
+| Page | Path |
+|------|------|
+| Home | `/` |
+| About | `/about.html` |
+| Recipes | `/recipes.html` |
+| Contact | `/contact-us.html` |
+| Thank you | `/thank-you.html` |
 
-`id`, `title`, `price`, `description`, `imageUrl`, `stripePaymentLink`
-
-To add a product, append a new object to the JSON array and redeploy. Put images in `public/assets/images/`.
-
-Replace `"stripePaymentLink": "#"` with your [Stripe Payment Link](https://dashboard.stripe.com/payment-links) URL (e.g. `https://buy.stripe.com/...`).
+Orders go through the contact form. There is no shop page.
 
 ## Deploy (Netlify)
 
