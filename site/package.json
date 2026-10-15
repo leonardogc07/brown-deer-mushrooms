@@ -1,0 +1,14 @@
+{
+  "name": "brown-deer-mushrooms",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Brown Deer Mushrooms — static marketing site",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
+  }
+}

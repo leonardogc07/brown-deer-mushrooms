@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Brown Deer Mushrooms for fresh mushroom orders, wholesale inquiries, or questions about our local farm in Winston-Salem, NC.">
+  <meta name="keywords" content="contact, mushroom order, wholesale, gourmet mushrooms, local farm, Winston-Salem, NC">
+  <title>Contact Us &amp; Place Orders - Brown Deer Mushrooms</title>
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://browndeermushrooms.com/contact-us.html">
+  <meta property="og:title" content="Contact Brown Deer Mushrooms">
+  <meta property="og:description" content="Place an order or ask about fresh gourmet mushrooms in Winston-Salem, NC.">
+  <meta property="og:image" content="https://browndeermushrooms.com/assets/images/logo.png">
+
+  <link rel="canonical" href="https://browndeermushrooms.com/contact-us.html">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="stylesheet" href="/css/site.css">
+</head>
+<body class="layout-sticky-footer">
+  <!-- @include partials/header.html compact -->
+
+  <main class="container">
+    <h2>Order Fresh Mushrooms or Ask a Question</h2>
+
+    <div class="form-container">
+      <h3>Start Your Order or Inquiry</h3>
+      <p>Use the form to place an order for weekly mushrooms or ask questions about bulk orders and availability.</p>
+
+      <form name="contact" method="POST" data-netlify="true" action="/thank-you.html">
+        <input type="hidden" name="form-name" value="contact">
+        <p class="hidden-visually">
+          <label>Don’t fill this out: <input name="bot-field"></label>
+        </p>
+        <div class="form-group">
+          <label for="contact-name">Name</label>
+          <input type="text" id="contact-name" name="name" required autocomplete="name" placeholder="Your name">
+        </div>
+        <div class="form-group">
+          <label for="contact-email">Email address</label>
+          <input type="email" id="contact-email" name="email" required autocomplete="email" placeholder="your.email@example.com">
+        </div>
+        <div class="form-group">
+          <label for="contact-message">Message / order details</label>
+          <textarea id="contact-message" name="message" required placeholder="I'd like to order 1 lb of chestnut mushrooms…"></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message &amp; Place Order</button>
+      </form>
+    </div>
+
+    <div class="form-container">
+      <h3>Join the Weekly Availability Newsletter</h3>
+      <p>Sign up for a quick weekly email about mushrooms available for order.</p>
+
+      <form name="newsletter" method="POST" data-netlify="true" action="/thank-you.html">
+        <input type="hidden" name="form-name" value="newsletter">
+        <p class="hidden-visually">
+          <label>Don’t fill this out: <input name="bot-field"></label>
+        </p>
+        <div class="form-group">
+          <label for="newsletter-email-contact">Email address</label>
+          <input type="email" id="newsletter-email-contact" name="email" required autocomplete="email" placeholder="your.email@example.com">
+        </div>
+        <button type="submit" class="btn">Subscribe Now</button>
+      </form>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-details">
+        <h3>Get In Touch Directly</h3>
+        <ul>
+          <li><strong>Phone:</strong> <a class="contact-link" href="tel:+13366138666">(336) 613-8666</a></li>
+          <li><strong>WhatsApp:</strong> <a class="contact-link" href="https://wa.me/13366138666" target="_blank" rel="noopener noreferrer">(336) 613-8666</a></li>
+          <li><strong>Email:</strong> <a class="contact-link" href="mailto:browndeermushrooms@gmail.com">browndeermushrooms@gmail.com</a></li>
+          <li><strong>Delivery area:</strong> Winston-Salem, NC and surrounding areas</li>
+        </ul>
+      </div>
+
+      <div class="hours">
+        <h3>Farm Stand &amp; Order Hours</h3>
+        <ul>
+          <li><strong>Saturday:</strong> 7:00 AM – Noon at the WS Fairgrounds Farmers Market</li>
+          <li><strong>Anytime:</strong> Use the form above to place your order or ask a question.</li>
+        </ul>
+        <p><strong>Orders available for pickup or local delivery</strong></p>
+      </div>
+    </div>
+  </main>
+
+  <!-- @include partials/footer.html -->
+</body>
+</html>

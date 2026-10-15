@@ -1,0 +1,3 @@
+create a landing webpage utilizing html for a Gourmet Mushroom Farm selling gourmet mushrooms fresh harvested to the local community. Look at images from https://www.facebook.com/bdmushrooms/. optimize for SEO and social networks
+
+https://huggingface.co/spaces/Qwen/Qwen3-Coder-WebDev

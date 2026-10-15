@@ -1,0 +1,47 @@
+<header class="site-header{{headerClass}}">
+{{#background}}
+  <img
+    src="/assets/images/header-bg.png"
+    alt=""
+    class="header-background-image"
+    width="1920"
+    height="1080"
+    {{imageAttrs}}
+  >
+{{/background}}
+  <div class="header-content">
+{{#logoLink}}
+    <a href="/" class="logo-link">
+      <img
+        src="/assets/images/logo.png"
+        alt="Brown Deer Mushrooms — home"
+        class="logo-image"
+        width="500"
+        height="500"
+      >
+    </a>
+{{/logoLink}}
+{{#logoStatic}}
+    <img
+      src="/assets/images/logo.png"
+      alt="Brown Deer Mushrooms"
+      class="logo-image"
+      width="500"
+      height="500"
+    >
+{{/logoStatic}}
+{{#nav}}
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="/">Home</a>
+      <a href="/shop.html">Shop</a>
+      <a href="/recipes.html">Recipes</a>
+      <a href="/contact-us.html">Contact</a>
+    </nav>
+{{/nav}}
+{{#cta}}
+    <div class="signup-banner">
+      <a href="#contact" class="btn btn--lg">Get Our Weekly Availability Email</a>
+    </div>
+{{/cta}}
+  </div>
+</header>

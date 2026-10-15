@@ -1,0 +1,7 @@
+.DS_Store
+.agents/
+.goose/
+skills-lock.json
+node_modules/
+.git-old-empty/
+dist/

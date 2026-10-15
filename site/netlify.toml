@@ -1,0 +1,7 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Netlify Forms: enable spam filtering on honeypot fields
+[build.environment]
+  NODE_VERSION = "20"

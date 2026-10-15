@@ -1,0 +1,18 @@
+[
+  {
+    "id": "oyster-mushrooms",
+    "title": "Oyster Mushrooms",
+    "price": 20,
+    "description": "Fresh harvested Oyster mushrooms per pound",
+    "imageUrl": "/assets/images/oyster.jpg",
+    "stripePaymentLink": "https://buy.stripe.com/test_bJecN5gpj2T9dei4J6fjG00"
+  },
+  {
+    "id": "lions-mane",
+    "title": "Lion's Mane",
+    "price": 20,
+    "description": "Brain boosting and delicious fresh harvested Lion's Mane mushrooms.",
+    "imageUrl": "/assets/images/lionsmane.jpg",
+    "stripePaymentLink": "#"
+  }
+]
