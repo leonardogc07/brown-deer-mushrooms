@@ -15,6 +15,7 @@
   --color-bg: #f9f7f4;
   --color-footer: #333;
   --shadow-card: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --radius-card: 10px;
   --font-sans: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   --max-width: 1200px;
 }
@@ -209,7 +210,7 @@ h3 {
   height: 400px;
   max-height: 400px;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: var(--radius-card);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
@@ -230,7 +231,7 @@ h3 {
 
 .mushroom-card {
   background: white;
-  border-radius: 10px;
+  border-radius: var(--radius-card);
   overflow: hidden;
   box-shadow: var(--shadow-card);
   transition: transform 0.3s ease;
@@ -308,7 +309,7 @@ h3 {
 .card {
   background: white;
   padding: 2rem;
-  border-radius: 10px;
+  border-radius: var(--radius-card);
   box-shadow: var(--shadow-card);
 }
 
@@ -390,7 +391,7 @@ h3 {
 .thank-you-message {
   background: white;
   padding: 3rem;
-  border-radius: 10px;
+  border-radius: var(--radius-card);
   box-shadow: var(--shadow-card);
   text-align: center;
   max-width: 600px;
@@ -483,7 +484,7 @@ h3 {
 
 .recipe-card {
   background: white;
-  border-radius: 10px;
+  border-radius: var(--radius-card);
   overflow: hidden;
   box-shadow: var(--shadow-card);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -575,7 +576,7 @@ h3 {
 
 .recipe-detail-hero img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: var(--radius-card);
   box-shadow: var(--shadow-card);
   aspect-ratio: 4 / 3;
   object-fit: cover;
@@ -632,7 +633,7 @@ h3 {
 .recipe-panel {
   background: white;
   padding: 2rem;
-  border-radius: 10px;
+  border-radius: var(--radius-card);
   box-shadow: var(--shadow-card);
 }
 
