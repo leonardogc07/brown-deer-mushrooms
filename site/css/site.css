@@ -228,12 +228,6 @@ h3 {
   margin-top: 2rem;
 }
 
-.guide-picks {
-  max-width: 22rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .mushroom-card {
   background: white;
   border-radius: 10px;
@@ -697,90 +691,6 @@ h3 {
   margin-top: 1rem;
 }
 
-/* --- Lion's mane magazine guide --- */
-.guide-magazine {
-  display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: 1.25rem;
-  align-items: start;
-}
-
-.guide-magazine section {
-  margin-bottom: 0;
-}
-
-.guide-hero {
-  grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: 1.35fr 1fr;
-  gap: 1.75rem;
-  align-items: center;
-  background: #fff;
-  border-radius: 12px;
-  padding: 1.25rem;
-  box-shadow: var(--shadow-card);
-}
-
-.guide-hero img,
-.guide-cook img,
-.guide-block--photo img {
-  width: 100%;
-  border-radius: 10px;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-}
-
-.guide-hero-copy h1 {
-  font-size: 2.5rem;
-  color: var(--color-brand);
-  margin-bottom: 0.75rem;
-  text-align: left;
-}
-
-.guide-magazine p + p {
-  margin-top: 0.85rem;
-}
-
-.guide-block,
-.guide-callout {
-  background: #fff;
-  border-radius: 12px;
-  padding: 1.5rem 1.4rem;
-  box-shadow: var(--shadow-card);
-}
-
-.guide-block h2,
-.guide-callout h2 {
-  text-align: left;
-  font-size: 1.45rem;
-  margin-bottom: 0.75rem;
-}
-
-.guide-block--tall {
-  min-height: 100%;
-}
-
-.guide-callout {
-  background: #f4e6d4;
-  border: 2px solid var(--color-brand);
-  box-shadow: none;
-}
-
-.guide-block--wide {
-  grid-column: 1 / -1;
-}
-
-.guide-cook {
-  display: grid;
-  grid-template-columns: 1fr 1.1fr;
-  gap: 1.5rem;
-  align-items: center;
-}
-
-.guide-block--photo img {
-  margin: 0.25rem 0 0.9rem;
-}
-
 /* --- Footer --- */
 .site-footer {
   background-color: var(--color-footer);
@@ -863,18 +773,4 @@ h3 {
     font-size: 1.85rem;
   }
 
-  .guide-magazine,
-  .guide-hero,
-  .guide-cook {
-    grid-template-columns: 1fr;
-  }
-
-  .guide-hero,
-  .guide-block--wide {
-    grid-column: auto;
-  }
-
-  .guide-hero-copy h1 {
-    font-size: 1.85rem;
-  }
 }
