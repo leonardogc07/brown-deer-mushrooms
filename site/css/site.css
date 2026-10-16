@@ -33,6 +33,108 @@ body.layout-sticky-footer {
   flex-direction: column;
 }
 
+/* Brand link color for every state so the browser default blue/purple never shows. */
+a:link,
+a:visited {
+  color: var(--color-brand);
+}
+
+.btn,
+.btn:link,
+.btn:visited,
+.btn:hover,
+.btn:active {
+  color: white;
+  text-decoration: none;
+}
+
+.site-nav a,
+.site-nav a:link,
+.site-nav a:visited,
+.site-nav a:hover,
+.site-nav a:active {
+  color: white;
+  text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a:active {
+  text-decoration: underline;
+}
+
+.contact-link,
+.contact-link:link,
+.contact-link:visited,
+.contact-link:hover,
+.contact-link:active {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.contact-link:hover,
+.contact-link:active {
+  text-decoration: underline;
+}
+
+.social-link,
+.social-link:link,
+.social-link:visited,
+.social-link:hover,
+.social-link:active {
+  color: white;
+  text-decoration: none;
+}
+
+/* Cards and tiles stay on brand with no underline, including after a visit. */
+.mushroom-card a,
+.mushroom-card a:link,
+.mushroom-card a:visited,
+.mushroom-card a:hover,
+.mushroom-card a:active,
+.card a,
+.card a:link,
+.card a:visited,
+.card a:hover,
+.card a:active,
+.recipe-card a,
+.recipe-card a:link,
+.recipe-card a:visited,
+.recipe-card a:hover,
+.recipe-card a:active,
+.recipe-card-link-wrap,
+.recipe-card-link-wrap:link,
+.recipe-card-link-wrap:visited,
+.recipe-card-link-wrap:hover,
+.recipe-card-link-wrap:active {
+  text-decoration: none;
+}
+
+.mushroom-card a,
+.mushroom-card a:link,
+.mushroom-card a:visited,
+.mushroom-card a:hover,
+.mushroom-card a:active,
+.card a,
+.card a:link,
+.card a:visited,
+.card a:hover,
+.card a:active {
+  color: var(--color-brand);
+}
+
+.recipe-card a,
+.recipe-card a:link,
+.recipe-card a:visited,
+.recipe-card a:hover,
+.recipe-card a:active,
+.recipe-card-link-wrap,
+.recipe-card-link-wrap:link,
+.recipe-card-link-wrap:visited,
+.recipe-card-link-wrap:hover,
+.recipe-card-link-wrap:active {
+  color: inherit;
+}
+
 /* --- Header --- */
 .site-header {
   position: relative;
@@ -144,7 +246,8 @@ body.layout-sticky-footer {
   text-align: center;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:active {
   background-color: var(--color-brand-dark);
   color: white;
   text-decoration: none;
@@ -329,7 +432,9 @@ h3 {
   font-weight: bold;
 }
 
-.contact-link:hover {
+.contact-link:hover,
+.contact-link:active {
+  color: var(--color-text);
   text-decoration: underline;
 }
 
@@ -427,13 +532,24 @@ h3 {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
-.site-nav a:hover {
+.site-nav a:hover,
+.site-nav a:active {
+  color: white;
   text-decoration: underline;
 }
 
-.site-header--minimal .site-nav a {
+.site-header--minimal .site-nav a,
+.site-header--minimal .site-nav a:link,
+.site-header--minimal .site-nav a:visited,
+.site-header--minimal .site-nav a:hover,
+.site-header--minimal .site-nav a:active {
   color: var(--color-brand);
   text-shadow: none;
+}
+
+.site-header--minimal .site-nav a:hover,
+.site-header--minimal .site-nav a:active {
+  text-decoration: underline;
 }
 
 .page-intro {
@@ -495,7 +611,11 @@ h3 {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
 }
 
-.recipe-card-link-wrap {
+.recipe-card-link-wrap,
+.recipe-card-link-wrap:link,
+.recipe-card-link-wrap:visited,
+.recipe-card-link-wrap:hover,
+.recipe-card-link-wrap:active {
   display: block;
   color: inherit;
   text-decoration: none;
@@ -527,14 +647,10 @@ h3 {
 
 .recipe-card-body h4 {
   font-size: 1.2rem;
-  color: #1a0dab;
+  color: var(--color-brand);
   margin-bottom: 0.5rem;
   line-height: 1.35;
   font-weight: 600;
-}
-
-.recipe-card--external:hover .recipe-card-body h4 {
-  text-decoration: underline;
 }
 
 .recipe-card-body p {
@@ -557,12 +673,17 @@ h3 {
   color: #666;
 }
 
-.breadcrumb a {
+.breadcrumb a,
+.breadcrumb a:link,
+.breadcrumb a:visited,
+.breadcrumb a:hover,
+.breadcrumb a:active {
   color: var(--color-brand);
   text-decoration: none;
 }
 
-.breadcrumb a:hover {
+.breadcrumb a:hover,
+.breadcrumb a:active {
   text-decoration: underline;
 }
 
@@ -712,7 +833,11 @@ h3 {
   margin: 1rem 0 1.25rem;
 }
 
-.social-link {
+.social-link,
+.social-link:link,
+.social-link:visited,
+.social-link:hover,
+.social-link:active {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -725,9 +850,11 @@ h3 {
   transition: background-color 0.2s ease, transform 0.2s ease, color 0.2s ease;
 }
 
-.social-link:hover {
+.social-link:hover,
+.social-link:active {
   background-color: var(--color-brand);
   color: white;
+  text-decoration: none;
   transform: translateY(-2px);
 }
 
