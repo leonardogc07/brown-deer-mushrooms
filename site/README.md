@@ -1,4 +1,4 @@
-# Brown Deer Mushrooms — website
+# Brown Deer Mushrooms website
 
 Refactored static site for [browndeermushrooms.com](https://browndeermushrooms.com): shared CSS, consistent asset paths, and Vite for local dev and production builds.
 
@@ -13,6 +13,8 @@ site/
 ├── scripts/html-partials.js  # Injects partials at build/dev time
 ├── index.html            # Homepage
 ├── about.html            # Farm story, varieties, and market hours
+├── guide/index.html      # Mushroom cooking guide hub
+├── guide/lions-mane.html # Lion's mane cooking guide
 ├── recipes.html          # Recipe index (external links by variety)
 ├── contact-us.html       # Order / contact forms
 ├── thank-you.html        # Form success page
@@ -83,6 +85,6 @@ Orders go through the contact form. There is no shop page.
 1. Connect this repo (or deploy only the `site/` directory).
 2. Build command: `npm run build`
 3. Publish directory: `dist`
-4. Forms use `data-netlify="true"` — ensure Netlify Forms is enabled on the site.
+4. Forms use `data-netlify="true"`. Enable Netlify Forms on the site.
 
 The legacy HTML at the repo root is unchanged; this `site/` folder is the maintained version.

@@ -1,0 +1,303 @@
+/* Quick-reference guide. Colors come from site.css variables. */
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,640&display=swap");
+
+.guide {
+  color: var(--color-text);
+}
+
+main.container:has(.guide) {
+  padding-top: 1.15rem;
+  padding-bottom: 1.75rem;
+}
+
+.guide .breadcrumb {
+  margin-bottom: 0.75rem;
+}
+
+.guide-mast {
+  margin-bottom: 0.35rem;
+}
+
+.guide-kicker {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-brand-dark);
+  margin-bottom: 0.3rem;
+}
+
+.guide-strip {
+  display: block;
+  width: auto;
+  background: none;
+  color: var(--color-brand-dark);
+  font-family: Fraunces, Georgia, "Times New Roman", serif;
+  font-weight: 560;
+  font-size: 1.45rem;
+  letter-spacing: 0;
+  text-transform: none;
+  line-height: 1.15;
+  text-align: left;
+  padding: 0;
+  margin: 1.15rem 0 0.45rem;
+}
+
+.guide-mast .guide-strip {
+  font-size: 2.35rem;
+  font-weight: 640;
+  margin-top: 0.15rem;
+  margin-bottom: 0.55rem;
+}
+
+.guide-hero {
+  margin: 0 0 0.85rem;
+}
+
+.guide-hero img {
+  display: block;
+  width: 100%;
+  max-height: 28rem;
+  object-fit: cover;
+  object-position: center 42%;
+  border-radius: var(--radius-card);
+}
+
+.guide-grow {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  gap: 0.75rem 1.25rem;
+  align-items: start;
+}
+
+.guide-video {
+  margin: 0;
+  max-width: 320px;
+  justify-self: start;
+}
+
+.guide-video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #1a120c;
+  border-radius: var(--radius-card);
+}
+
+.guide-video figcaption {
+  margin-top: 0.3rem;
+  font-size: 0.88rem;
+  line-height: 1.35;
+  color: var(--color-text);
+}
+
+.guide-lead {
+  font-size: 0.98rem;
+  line-height: 1.45;
+  margin-bottom: 0.35rem;
+}
+
+.guide section {
+  margin-bottom: 0.15rem;
+}
+
+.guide-cols {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.35rem 1.1rem;
+  align-items: start;
+}
+
+.guide p {
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.guide p + p {
+  margin-top: 0.45rem;
+}
+
+.guide a {
+  color: var(--color-brand-dark);
+}
+
+.guide h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin: 0 0 0.3rem;
+  color: var(--color-brand-dark);
+}
+
+.guide-recipes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  align-items: stretch;
+}
+
+.guide-recipe {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: color-mix(in srgb, var(--color-brand) 12%, var(--color-bg));
+  border-radius: var(--radius-card);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 0.7rem 0.75rem 0.85rem;
+}
+
+.guide-recipe-body {
+  flex: 1 1 auto;
+}
+
+.guide-cutout {
+  float: right;
+  width: 7.25rem;
+  height: auto;
+  margin: 0.1rem 0 0.35rem 0.65rem;
+  border-radius: 40% 45% 42% 48%;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+
+.guide-difficulty {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem 0.7rem;
+  margin: 0.15rem 0 0.55rem;
+}
+
+.guide-difficulty-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-brand-dark);
+  margin: 0;
+}
+
+.guide-badges {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.guide-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.28rem 0.7rem 0.28rem 0.45rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--color-brand) 14%, var(--color-bg));
+  color: var(--color-brand-dark);
+  font-size: 0.88rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.guide-meter {
+  display: inline-flex;
+  gap: 0.18rem;
+  align-items: center;
+}
+
+.guide-meter i {
+  width: 0.42rem;
+  height: 0.42rem;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--color-brand) 28%, white);
+  font-style: normal;
+}
+
+.guide-meter i.is-on {
+  background: var(--color-brand);
+}
+
+.guide-rules {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.55rem 1rem;
+}
+
+.guide-rules li {
+  display: grid;
+  grid-template-columns: 2.15rem 1fr;
+  gap: 0.35rem;
+  align-items: start;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.guide-rules li::before {
+  content: counter(rule);
+  counter-increment: rule;
+  font-size: 1.85rem;
+  font-weight: 800;
+  line-height: 0.85;
+  color: var(--color-brand);
+}
+
+.guide-rules {
+  counter-reset: rule;
+}
+
+.guide-note {
+  background: color-mix(in srgb, var(--color-brand) 16%, var(--color-bg));
+  border-radius: var(--radius-card);
+  padding: 1rem 1.15rem;
+  margin-top: 0.15rem;
+}
+
+.guide-note p + p {
+  margin-top: 0.4rem;
+}
+
+.guide-kits {
+  margin-top: 2.75rem;
+}
+
+.guide strong {
+  color: var(--color-brand-dark);
+}
+
+@media (max-width: 900px) {
+  .guide-cols,
+  .guide-rules,
+  .guide-recipes {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .guide-cols,
+  .guide-rules,
+  .guide-recipes,
+  .guide-grow {
+    grid-template-columns: 1fr;
+  }
+
+  .guide-video {
+    max-width: 360px;
+    margin-inline: auto;
+    justify-self: center;
+  }
+
+  .guide-mast .guide-strip {
+    font-size: 1.85rem;
+  }
+
+  .guide-hero img {
+    max-height: 20rem;
+  }
+
+  .guide-cutout {
+    width: 5.75rem;
+  }
+}

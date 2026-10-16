@@ -15,6 +15,8 @@ export default defineConfig({
         thankYou: resolve(__dirname, "thank-you.html"),
         recipes: resolve(__dirname, "recipes.html"),
         about: resolve(__dirname, "about.html"),
+        guide: resolve(__dirname, "guide/index.html"),
+        guideLionsMane: resolve(__dirname, "guide/lions-mane.html"),
       },
     },
   },
