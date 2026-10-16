@@ -65,14 +65,15 @@ main.container:has(.guide) {
 
 .guide-grow {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
   gap: 0.75rem 1.25rem;
   align-items: start;
 }
 
 .guide-video {
   margin: 0;
-  max-width: none;
+  max-width: 320px;
+  justify-self: start;
 }
 
 .guide-video video {
@@ -258,6 +259,10 @@ main.container:has(.guide) {
   margin-top: 0.4rem;
 }
 
+.guide-kits {
+  margin-top: 2.75rem;
+}
+
 .guide strong {
   color: var(--color-brand-dark);
 }
@@ -276,6 +281,12 @@ main.container:has(.guide) {
   .guide-recipes,
   .guide-grow {
     grid-template-columns: 1fr;
+  }
+
+  .guide-video {
+    max-width: 360px;
+    margin-inline: auto;
+    justify-self: center;
   }
 
   .guide-mast .guide-strip {
