@@ -107,13 +107,21 @@ main.container:has(.guide) {
   min-width: 0;
 }
 
-.guide-card {
+a.guide-card,
+a.guide-card:link,
+a.guide-card:visited,
+a.guide-card:hover,
+a.guide-card:active,
+a.guide-card * {
+  color: inherit;
+  text-decoration: none;
+}
+
+a.guide-card {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 100%;
-  color: inherit;
-  text-decoration: none;
   background: color-mix(in srgb, var(--color-brand) 12%, var(--color-bg));
   border-radius: var(--radius-card);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -121,9 +129,22 @@ main.container:has(.guide) {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.guide-card:hover {
+a.guide-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+a.guide-card:focus-visible {
+  outline: 2px solid var(--color-brand-dark);
+  outline-offset: 3px;
+}
+
+a.guide-card .guide-card-title,
+a.guide-card:link .guide-card-title,
+a.guide-card:visited .guide-card-title,
+a.guide-card:hover .guide-card-title,
+a.guide-card:active .guide-card-title {
+  color: var(--color-brand-dark);
 }
 
 .guide-card img {
