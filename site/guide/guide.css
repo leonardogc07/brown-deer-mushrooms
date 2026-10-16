@@ -43,25 +43,11 @@ main.container:has(.guide) {
   margin: 1.15rem 0 0.45rem;
 }
 
-.guide-strip::after {
-  content: "";
-  display: block;
-  width: 2.75rem;
-  height: 2px;
-  margin-top: 0.32rem;
-  background: var(--color-brand);
-}
-
 .guide-mast .guide-strip {
   font-size: 2.35rem;
   font-weight: 640;
   margin-top: 0.15rem;
   margin-bottom: 0.55rem;
-}
-
-.guide-mast .guide-strip::after {
-  width: 3.5rem;
-  height: 3px;
 }
 
 .guide-hero {
@@ -77,9 +63,16 @@ main.container:has(.guide) {
   border-radius: var(--radius-card);
 }
 
+.guide-grow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 0.75rem 1.25rem;
+  align-items: start;
+}
+
 .guide-video {
-  margin: 0.55rem 0 0.2rem;
-  max-width: 16.5rem;
+  margin: 0;
+  max-width: none;
 }
 
 .guide-video video {
@@ -139,14 +132,21 @@ main.container:has(.guide) {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.75rem;
-  align-items: start;
+  align-items: stretch;
 }
 
 .guide-recipe {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   background: color-mix(in srgb, var(--color-brand) 12%, var(--color-bg));
   border-radius: var(--radius-card);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   padding: 0.7rem 0.75rem 0.85rem;
+}
+
+.guide-recipe-body {
+  flex: 1 1 auto;
 }
 
 .guide-cutout {
@@ -160,6 +160,10 @@ main.container:has(.guide) {
 }
 
 .guide-difficulty {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem 0.7rem;
   margin: 0.15rem 0 0.55rem;
 }
 
@@ -169,7 +173,7 @@ main.container:has(.guide) {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--color-brand-dark);
-  margin-bottom: 0.35rem;
+  margin: 0;
 }
 
 .guide-badges {
@@ -245,7 +249,8 @@ main.container:has(.guide) {
 
 .guide-note {
   background: color-mix(in srgb, var(--color-brand) 16%, var(--color-bg));
-  padding: 0.55rem 0.7rem;
+  border-radius: var(--radius-card);
+  padding: 1rem 1.15rem;
   margin-top: 0.15rem;
 }
 
@@ -268,7 +273,8 @@ main.container:has(.guide) {
 @media (max-width: 560px) {
   .guide-cols,
   .guide-rules,
-  .guide-recipes {
+  .guide-recipes,
+  .guide-grow {
     grid-template-columns: 1fr;
   }
 
