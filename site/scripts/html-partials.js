@@ -24,7 +24,7 @@ const HEADER_VARIANTS = {
     logoStatic: false,
     nav: true,
     cta: false,
-    imageAttrs: 'loading="lazy"',
+    imageAttrs: "",
   },
   minimal: {
     headerClass: " site-header--minimal",

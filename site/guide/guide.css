@@ -67,7 +67,12 @@ main.container:has(.guide) {
   justify-self: start;
 }
 
-.guide-video video {
+.guide-video-tall {
+  max-width: 280px;
+}
+
+.guide-video video,
+.guide-video img {
   display: block;
   width: 100%;
   height: auto;
@@ -195,7 +200,11 @@ a.guide-card:active .guide-card-title {
   margin-top: 0.45rem;
 }
 
-.guide a {
+.guide a,
+.guide a:link,
+.guide a:visited,
+.guide a:hover,
+.guide a:active {
   color: var(--color-brand-dark);
 }
 
@@ -367,6 +376,10 @@ a.guide-card:active .guide-card-title {
     max-width: 360px;
     margin-inline: auto;
     justify-self: center;
+  }
+
+  .guide-video-tall {
+    max-width: 320px;
   }
 
   .guide-mast .guide-strip {
