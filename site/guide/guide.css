@@ -67,6 +67,10 @@ main.container:has(.guide) {
   justify-self: start;
 }
 
+.guide-video-tall {
+  max-width: 280px;
+}
+
 .guide-video video,
 .guide-video img {
   display: block;
@@ -372,6 +376,10 @@ a.guide-card:active .guide-card-title {
     max-width: 360px;
     margin-inline: auto;
     justify-self: center;
+  }
+
+  .guide-video-tall {
+    max-width: 320px;
   }
 
   .guide-mast .guide-strip {
