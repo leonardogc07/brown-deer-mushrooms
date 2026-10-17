@@ -17,6 +17,7 @@ export default defineConfig({
         about: resolve(__dirname, "about.html"),
         guide: resolve(__dirname, "guide/index.html"),
         guideLionsMane: resolve(__dirname, "guide/lions-mane.html"),
+        guideOyster: resolve(__dirname, "guide/oyster.html"),
       },
     },
   },

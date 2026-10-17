@@ -67,7 +67,8 @@ main.container:has(.guide) {
   justify-self: start;
 }
 
-.guide-video video {
+.guide-video video,
+.guide-video img {
   display: block;
   width: 100%;
   height: auto;
@@ -195,7 +196,11 @@ a.guide-card:active .guide-card-title {
   margin-top: 0.45rem;
 }
 
-.guide a {
+.guide a,
+.guide a:link,
+.guide a:visited,
+.guide a:hover,
+.guide a:active {
   color: var(--color-brand-dark);
 }
 
