@@ -18,6 +18,7 @@ export default defineConfig({
         guide: resolve(__dirname, "guide/index.html"),
         guideLionsMane: resolve(__dirname, "guide/lions-mane.html"),
         guideOyster: resolve(__dirname, "guide/oyster.html"),
+        guideChestnut: resolve(__dirname, "guide/chestnut.html"),
       },
     },
   },
