@@ -1,9 +1,9 @@
 import { resolve } from "node:path";
 import { defineConfig } from "vite";
-import { htmlPartials } from "./scripts/html-partials.js";
+import { cloudflareWebAnalytics, htmlPartials } from "./scripts/html-partials.js";
 
 export default defineConfig({
-  plugins: [htmlPartials()],
+  plugins: [htmlPartials(), cloudflareWebAnalytics()],
   publicDir: "public",
   build: {
     outDir: "dist",
