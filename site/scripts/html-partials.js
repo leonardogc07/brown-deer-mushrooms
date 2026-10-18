@@ -7,6 +7,10 @@ const partialsDir = resolve(rootDir, "partials");
 
 const INCLUDE_RE = /<!--\s*@include\s+([\w./-]+)(?:\s+(\w+))?\s*-->/g;
 
+// Injected after Vite's HTML transform so the external beacon is not bundled or rewritten.
+const CF_BEACON =
+  "<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{\"token\": \"ceb15db0f15d446aa2f193936f321819\"}'></script><!-- End Cloudflare Web Analytics -->";
+
 const HEADER_VARIANTS = {
   home: {
     headerClass: "",
@@ -67,6 +71,24 @@ export function htmlPartials() {
         return html.replace(INCLUDE_RE, (_, partialPath, variant) =>
           loadPartial(partialPath, variant),
         );
+      },
+    },
+  };
+}
+
+export function cloudflareWebAnalytics() {
+  return {
+    name: "cloudflare-web-analytics",
+    transformIndexHtml: {
+      order: "post",
+      handler(html) {
+        if (html.includes("static.cloudflareinsights.com/beacon.min.js")) {
+          return html;
+        }
+        if (!html.includes("</body>")) {
+          return html;
+        }
+        return html.replace("</body>", `${CF_BEACON}</body>`);
       },
     },
   };
