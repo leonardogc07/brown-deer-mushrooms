@@ -19,6 +19,7 @@ export default defineConfig({
         guideLionsMane: resolve(__dirname, "guide/lions-mane.html"),
         guideOyster: resolve(__dirname, "guide/oyster.html"),
         guideChestnut: resolve(__dirname, "guide/chestnut.html"),
+        guideGoldenEnoki: resolve(__dirname, "guide/golden-enoki.html"),
       },
     },
   },
