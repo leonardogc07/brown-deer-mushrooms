@@ -184,6 +184,58 @@ a.guide-card:active .guide-card-title {
   margin-top: 1rem;
 }
 
+.guide-table-wrap {
+  overflow-x: auto;
+  margin: 0.35rem 0 0.85rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.guide-compare {
+  width: 100%;
+  min-width: 44rem;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+
+.guide-compare th,
+.guide-compare td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.55rem 0.6rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--color-brand) 35%, var(--color-bg));
+}
+
+.guide-compare th {
+  color: var(--color-brand-dark);
+  font-weight: 650;
+}
+
+.guide-more ul {
+  list-style: none;
+  margin: 0.2rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1rem;
+}
+
+.guide-more li {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
 .guide-cols {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
