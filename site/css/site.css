@@ -574,22 +574,12 @@ h3 {
   text-align: center;
 }
 
-.preorder-placeholder {
-  border: 2px dashed var(--color-brand);
-  background: #f3efe8;
+.preorder-block {
+  margin-bottom: 0;
 }
 
-.preorder-label {
-  display: inline-block;
-  margin-bottom: 0.5rem;
-  padding: 0.15rem 0.5rem;
-  border-radius: 4px;
-  background: var(--color-brand);
-  color: white;
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+.preorder-block p {
+  margin-bottom: 1.25rem;
 }
 
 .recipe-disclaimer {
