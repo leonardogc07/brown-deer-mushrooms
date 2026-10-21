@@ -5,3 +5,14 @@
 # Netlify Forms: enable spam filtering on honeypot fields
 [build.environment]
   NODE_VERSION = "20"
+
+# QR codes and the home page link use /pickup. The file is pickup.html.
+[[redirects]]
+  from = "/pickup"
+  to = "/pickup.html"
+  status = 200
+
+[[redirects]]
+  from = "/pickup-thanks"
+  to = "/pickup-thanks.html"
+  status = 200

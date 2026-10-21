@@ -76,6 +76,8 @@ npm run preview  # preview production build
 | About | `/about.html` |
 | Recipes | `/recipes.html` |
 | Contact | `/contact-us.html` |
+| Saturday pickup | `/pickup` |
+| Saturday list thanks | `/pickup-thanks` |
 | Thank you | `/thank-you.html` |
 
 Orders go through the contact form. There is no shop page.
