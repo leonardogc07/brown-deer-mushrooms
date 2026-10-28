@@ -51,6 +51,7 @@ export default defineConfig({
         guideChestnut: resolve(__dirname, "guide/chestnut.html"),
         guideGoldenEnoki: resolve(__dirname, "guide/golden-enoki.html"),
         guideCompare: resolve(__dirname, "guide/compare.html"),
+        guideGifts: resolve(__dirname, "guide/gifts.html"),
       },
     },
   },
