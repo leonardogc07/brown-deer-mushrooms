@@ -8,6 +8,10 @@ function extensionlessPages() {
     "/pickup/": "/pickup.html",
     "/pickup-thanks": "/pickup-thanks.html",
     "/pickup-thanks/": "/pickup-thanks.html",
+    "/kits": "/kits.html",
+    "/kits/": "/kits.html",
+    "/kits-thanks": "/kits-thanks.html",
+    "/kits-thanks/": "/kits-thanks.html",
   };
 
   const rewrite = (req, _res, next) => {
@@ -45,6 +49,8 @@ export default defineConfig({
         about: resolve(__dirname, "about.html"),
         pickup: resolve(__dirname, "pickup.html"),
         pickupThanks: resolve(__dirname, "pickup-thanks.html"),
+        kits: resolve(__dirname, "kits.html"),
+        kitsThanks: resolve(__dirname, "kits-thanks.html"),
         guide: resolve(__dirname, "guide/index.html"),
         guideLionsMane: resolve(__dirname, "guide/lions-mane.html"),
         guideOyster: resolve(__dirname, "guide/oyster.html"),

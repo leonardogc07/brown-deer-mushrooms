@@ -481,6 +481,24 @@ h3 {
   min-height: 100px;
 }
 
+.kit-choices {
+  border: 0;
+  margin: 0 0 1rem;
+  padding: 0;
+}
+
+.kit-choices legend {
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.kit-choices label {
+  display: block;
+  font-weight: normal;
+  margin: 0.35rem 0;
+}
+
 .hidden-visually {
   position: absolute !important;
   width: 1px !important;

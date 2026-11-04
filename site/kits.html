@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Join the Brown Deer Mushrooms grow kit list. We grow Chestnut, Oyster, Lion's Mane, and Golden Enoki in Winston-Salem, NC, and we may offer our own kits.">
+  <meta name="keywords" content="mushroom grow kit, oyster, lion's mane, chestnut, golden enoki, Winston-Salem, Brown Deer Mushrooms">
+  <title>Grow Kit List - Brown Deer Mushrooms</title>
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://browndeermushrooms.com/kits">
+  <meta property="og:title" content="Grow Kit List - Brown Deer Mushrooms">
+  <meta property="og:description" content="We're thinking about offering our own grow kits. Join the list to hear first.">
+  <meta property="og:image" content="https://browndeermushrooms.com/assets/images/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://browndeermushrooms.com/kits">
+  <meta name="twitter:title" content="Grow Kit List - Brown Deer Mushrooms">
+  <meta name="twitter:description" content="We're thinking about offering our own grow kits. Join the list to hear first.">
+  <meta name="twitter:image" content="https://browndeermushrooms.com/assets/images/logo.png">
+
+  <link rel="canonical" href="https://browndeermushrooms.com/kits">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="stylesheet" href="/css/site.css">
+</head>
+<body class="layout-sticky-footer">
+  <!-- @include partials/header.html compact -->
+
+  <main class="container">
+    <h2>Grow kits</h2>
+    <div class="page-intro">
+      <p>We grow Chestnut, Oyster, Lion's Mane, and Golden Enoki in Winston-Salem, NC.</p>
+      <p>We're thinking about offering our own grow kits. Join the list and we'll email you first if we do.</p>
+    </div>
+
+    <div class="form-container">
+      <h3>Grow kit list</h3>
+      <p>Tell us which kits you would want. We'll only email you about our own kits.</p>
+
+      <form name="kit-waitlist" method="POST" action="/kits-thanks" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="kit-waitlist">
+        <p class="hidden-visually">
+          <label>Don't fill this out: <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+        </p>
+        <div class="form-group">
+          <label for="kit-first-name">First name (optional)</label>
+          <input type="text" id="kit-first-name" name="first-name" autocomplete="given-name">
+        </div>
+        <div class="form-group">
+          <label for="kit-email">Email</label>
+          <input type="email" id="kit-email" name="email" required autocomplete="email" placeholder="your.email@example.com">
+        </div>
+        <fieldset class="kit-choices">
+          <legend>Which kits would you want?</legend>
+          <label><input type="checkbox" name="kits" value="Oyster"> Oyster</label>
+          <label><input type="checkbox" name="kits" value="Lion's Mane"> Lion's Mane</label>
+          <label><input type="checkbox" name="kits" value="Chestnut"> Chestnut</label>
+          <label><input type="checkbox" name="kits" value="Golden Enoki"> Golden Enoki</label>
+        </fieldset>
+        <button type="submit" class="btn">Join the list</button>
+      </form>
+    </div>
+  </main>
+
+  <!-- @include partials/footer.html -->
+</body>
+</html>
