@@ -16,3 +16,13 @@
   from = "/pickup-thanks"
   to = "/pickup-thanks.html"
   status = 200
+
+[[redirects]]
+  from = "/kits"
+  to = "/kits.html"
+  status = 200
+
+[[redirects]]
+  from = "/kits-thanks"
+  to = "/kits-thanks.html"
+  status = 200
