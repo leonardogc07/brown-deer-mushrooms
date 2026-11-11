@@ -58,6 +58,7 @@ export default defineConfig({
         guideGoldenEnoki: resolve(__dirname, "guide/golden-enoki.html"),
         guideCompare: resolve(__dirname, "guide/compare.html"),
         guideGifts: resolve(__dirname, "guide/gifts.html"),
+        guideGrowKits: resolve(__dirname, "guide/grow-kits.html"),
       },
     },
   },
