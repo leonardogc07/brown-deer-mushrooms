@@ -406,6 +406,36 @@ a.guide-card:active .guide-card-title {
   color: var(--color-brand-dark);
 }
 
+.guide p.guide-fine-print {
+  margin: 2.25rem 0 0.15rem;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: color-mix(in srgb, var(--color-text) 72%, var(--color-bg));
+}
+
+.guide p.guide-fine-print + .guide-fine-print {
+  margin-top: 0.3rem;
+}
+
+.guide-recipe:has(.guide-kit-photo) {
+  padding: 0 0 0.85rem;
+  overflow: hidden;
+}
+
+.guide-kit-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  background: #fff;
+  margin: 0 0 0.7rem;
+}
+
+.guide-recipe:has(.guide-kit-photo) .guide-recipe-body {
+  padding: 0 0.75rem;
+}
+
 @media (max-width: 900px) {
   .guide-cols,
   .guide-rules,
