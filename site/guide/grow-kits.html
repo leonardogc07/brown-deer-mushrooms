@@ -129,7 +129,7 @@
         </p>
         <p>
           We are still thinking about kits of our own.
-          <a href="/kits">Join the grow kit list</a> if you want a note when we offer them.
+          <a href="#kit-list">Join the grow kit list</a> if you want a note when we offer them.
           Until then, the kits below are from Mushroom Grow Kit Co.
         </p>
         <p>
@@ -137,6 +137,33 @@
           <a href="/pickup">Preorder Saturday pickup</a> and we will have fresh mushrooms at the market.
         </p>
       </section>
+
+      <div class="form-container" id="kit-list">
+        <h3>Get a note when our own kits are ready</h3>
+        <p>We are thinking about kits of our own. Leave your email and we will write when we have them.</p>
+        <form name="kit-waitlist" method="POST" action="/kits-thanks" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="kit-waitlist">
+          <p class="hidden-visually">
+            <label>Don't fill this out: <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+          </p>
+          <div class="form-group">
+            <label for="kit-first-name">First name (optional)</label>
+            <input type="text" id="kit-first-name" name="first-name" autocomplete="given-name">
+          </div>
+          <div class="form-group">
+            <label for="kit-email">Email</label>
+            <input type="email" id="kit-email" name="email" required autocomplete="email" placeholder="your.email@example.com">
+          </div>
+          <fieldset class="kit-choices">
+            <legend>Which kits would you want?</legend>
+            <label><input type="checkbox" name="kits" value="Oyster"> Oyster</label>
+            <label><input type="checkbox" name="kits" value="Lion's Mane"> Lion's Mane</label>
+            <label><input type="checkbox" name="kits" value="Chestnut"> Chestnut</label>
+            <label><input type="checkbox" name="kits" value="Golden Enoki"> Golden Enoki</label>
+          </fieldset>
+          <button type="submit" class="btn">Join the list</button>
+        </form>
+      </div>
 
       <section>
         <h2 class="guide-strip">Which kit is right for you</h2>
@@ -531,6 +558,33 @@
           We only linked the kits that the code covers.
         </p>
       </section>
+
+      <div class="form-container" id="kit-list-end">
+        <h3>Get a note when our own kits are ready</h3>
+        <p>We are thinking about kits of our own. Leave your email and we will write when we have them.</p>
+        <form name="kit-waitlist" method="POST" action="/kits-thanks" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="kit-waitlist">
+          <p class="hidden-visually">
+            <label>Don't fill this out: <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+          </p>
+          <div class="form-group">
+            <label for="kit-first-name-end">First name (optional)</label>
+            <input type="text" id="kit-first-name-end" name="first-name" autocomplete="given-name">
+          </div>
+          <div class="form-group">
+            <label for="kit-email-end">Email</label>
+            <input type="email" id="kit-email-end" name="email" required autocomplete="email" placeholder="your.email@example.com">
+          </div>
+          <fieldset class="kit-choices">
+            <legend>Which kits would you want?</legend>
+            <label><input type="checkbox" name="kits" value="Oyster"> Oyster</label>
+            <label><input type="checkbox" name="kits" value="Lion's Mane"> Lion's Mane</label>
+            <label><input type="checkbox" name="kits" value="Chestnut"> Chestnut</label>
+            <label><input type="checkbox" name="kits" value="Golden Enoki"> Golden Enoki</label>
+          </fieldset>
+          <button type="submit" class="btn">Join the list</button>
+        </form>
+      </div>
 
       <nav class="guide-more" aria-label="More from our guide">
         <h2 class="guide-strip">From our farm and our guides</h2>
