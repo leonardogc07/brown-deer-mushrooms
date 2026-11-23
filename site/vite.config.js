@@ -47,6 +47,7 @@ export default defineConfig({
         kitsThanks: resolve(__dirname, "kits-thanks.html"),
         guide: resolve(__dirname, "guide/index.html"),
         guideLionsMane: resolve(__dirname, "guide/lions-mane.html"),
+        guideLionsManeTacos: resolve(__dirname, "guide/lions-mane-tacos.html"),
         guideOyster: resolve(__dirname, "guide/oyster.html"),
         guideChestnut: resolve(__dirname, "guide/chestnut.html"),
         guideGoldenEnoki: resolve(__dirname, "guide/golden-enoki.html"),
