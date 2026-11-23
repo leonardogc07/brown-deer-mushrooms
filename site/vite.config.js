@@ -4,10 +4,6 @@ import { cloudflareWebAnalytics, htmlPartials } from "./scripts/html-partials.js
 
 function extensionlessPages() {
   const routes = {
-    "/pickup": "/pickup.html",
-    "/pickup/": "/pickup.html",
-    "/pickup-thanks": "/pickup-thanks.html",
-    "/pickup-thanks/": "/pickup-thanks.html",
     "/kits": "/kits.html",
     "/kits/": "/kits.html",
     "/kits-thanks": "/kits-thanks.html",
@@ -47,8 +43,6 @@ export default defineConfig({
         thankYou: resolve(__dirname, "thank-you.html"),
         recipes: resolve(__dirname, "recipes.html"),
         about: resolve(__dirname, "about.html"),
-        pickup: resolve(__dirname, "pickup.html"),
-        pickupThanks: resolve(__dirname, "pickup-thanks.html"),
         kits: resolve(__dirname, "kits.html"),
         kitsThanks: resolve(__dirname, "kits-thanks.html"),
         guide: resolve(__dirname, "guide/index.html"),

@@ -6,16 +6,42 @@
 [build.environment]
   NODE_VERSION = "20"
 
-# QR codes and the home page link use /pickup. The file is pickup.html.
+# Old Saturday URLs from social posts and QR codes.
 [[redirects]]
   from = "/pickup"
-  to = "/pickup.html"
-  status = 200
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pickup/"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pickup.html"
+  to = "/"
+  status = 301
+  force = true
 
 [[redirects]]
   from = "/pickup-thanks"
-  to = "/pickup-thanks.html"
-  status = 200
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pickup-thanks/"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pickup-thanks.html"
+  to = "/"
+  status = 301
+  force = true
 
 [[redirects]]
   from = "/kits"
