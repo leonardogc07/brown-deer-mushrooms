@@ -397,6 +397,35 @@ h3 {
   object-fit: cover;
 }
 
+.stand-visit {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+}
+
+.stand-visit-copy {
+  flex: 1.2;
+}
+
+.stand-visit-copy p + p {
+  margin-top: 1.25rem;
+}
+
+.stand-visit-video {
+  flex: 0 1 280px;
+  margin: 0;
+  border-radius: var(--radius-card);
+  overflow: hidden;
+}
+
+.stand-visit-video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-card);
+  background: #1a120c;
+}
+
 /* --- Contact --- */
 .contact-info,
 .contact-grid {
@@ -932,8 +961,13 @@ h3 {
 
 /* --- Responsive --- */
 @media (max-width: 768px) {
-  .about-content {
+  .about-content,
+  .stand-visit {
     flex-direction: column;
+  }
+
+  .stand-visit-video {
+    width: min(100%, 320px);
   }
 
   .page-title {
