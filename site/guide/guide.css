@@ -55,6 +55,10 @@ main.container:has(.guide) {
   border-radius: var(--radius-card);
 }
 
+.guide-hero img.hero-oysters {
+  object-position: center 78%;
+}
+
 .guide-grow {
   display: grid;
   grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
