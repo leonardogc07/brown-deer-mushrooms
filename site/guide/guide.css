@@ -273,6 +273,15 @@ a.guide-card:active .guide-card-title {
   color: var(--color-brand-dark);
 }
 
+.guide .form-container h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 0;
+  margin: 0 0 1rem;
+  color: var(--color-brand);
+}
+
 .guide-recipes {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
