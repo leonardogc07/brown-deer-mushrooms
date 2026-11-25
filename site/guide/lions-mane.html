@@ -134,6 +134,23 @@
         </div>
       </section>
 
+      <div class="form-container" id="lions-mane-news">
+        <h3>Get Lion's Mane news from our farm</h3>
+        <p>I send a short note when we have fresh Lion's Mane, new recipes, and grow kit updates. No spam.</p>
+        <form name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
+          <input type="hidden" name="form-name" value="newsletter">
+          <input type="hidden" name="source" value="lions-mane">
+          <p class="hidden-visually">
+            <label>Don’t fill this out: <input name="bot-field"></label>
+          </p>
+          <div class="form-group">
+            <label for="newsletter-email-lions-mane">Email address</label>
+            <input type="email" id="newsletter-email-lions-mane" name="email" required autocomplete="email" placeholder="your.email@example.com">
+          </div>
+          <button type="submit" class="btn">Sign me up</button>
+        </form>
+      </div>
+
       <section>
         <h2 class="guide-strip">How We Grow It</h2>
         <div class="guide-grow">
