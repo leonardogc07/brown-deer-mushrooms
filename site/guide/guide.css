@@ -59,6 +59,41 @@ main.container:has(.guide) {
   object-position: center 78%;
 }
 
+.guide-hero img.hero-screen {
+  max-height: none;
+  object-fit: contain;
+  object-position: center;
+  background: var(--color-bg);
+}
+
+.kanto-mark {
+  display: block;
+  width: 6.5rem;
+  height: auto;
+  margin: 0 0 0.65rem;
+}
+
+.guide-shot {
+  margin: 0;
+}
+
+.guide-shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-card);
+}
+
+.guide-shot figcaption {
+  margin-top: 0.3rem;
+  font-size: 0.88rem;
+  line-height: 1.35;
+}
+
+.guide-byline {
+  font-size: 0.88rem;
+}
+
 .guide-grow {
   display: grid;
   grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
@@ -245,6 +280,13 @@ a.guide-card:active .guide-card-title {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.35rem 1.1rem;
+  align-items: start;
+}
+
+.guide-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem 1.1rem;
   align-items: start;
 }
 
@@ -623,6 +665,7 @@ a.guide-card:active .guide-card-title {
 
 @media (max-width: 560px) {
   .guide-cols,
+  .guide-pair,
   .guide-rules,
   .guide-recipes,
   .guide-index,

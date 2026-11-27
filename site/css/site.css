@@ -1068,6 +1068,14 @@ h3 {
   padding: 2rem;
 }
 
+.site-footer a,
+.site-footer a:link,
+.site-footer a:visited,
+.site-footer a:hover,
+.site-footer a:active {
+  color: white;
+}
+
 .layout-sticky-footer .site-footer {
   margin-top: auto;
 }
