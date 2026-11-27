@@ -54,6 +54,7 @@ export default defineConfig({
         guideCompare: resolve(__dirname, "guide/compare.html"),
         guideGifts: resolve(__dirname, "guide/gifts.html"),
         guideGrowKits: resolve(__dirname, "guide/grow-kits.html"),
+        guideHowWeRun: resolve(__dirname, "guide/how-we-run-the-farm.html"),
       },
     },
   },
